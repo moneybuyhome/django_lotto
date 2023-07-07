@@ -19,7 +19,7 @@ from lotto import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('',views.index), # lotoo
+    path('',views.index), # lotoo
     path('hello/', views.hello, name='hello_main'), # lotto > views.py 파일의 hello() 함수 호출
     path('lotto/', views.index, name='index'), #http://127.0.0.1:8000/lotto/
     path('lotto/new', views.post, name = "new_lotto"),
